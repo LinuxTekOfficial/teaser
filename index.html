@@ -3,19 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LinuxTek | Linux Webshop (Coming Soon)</title>
+  <title>LinuxTek | Computers and Privacy Solutions</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="LinuxTek | Your Linux Hardware Shop" />
+  <meta property="og:description" content="Explore our range of hardware, tools, and services tailored for Linux users!" />
+  <meta property="og:image" content="https://linuxtek.net/og-banner.png" />
+  <meta property="og:url" content="https://linuxtek.net" />
+  <meta property="og:type" content="website" />
+
   <link rel="icon" type="image/x-icon" href="tux.png">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
+  <div class="hero">
     <div class="hero-content">
-      <img src="tux.png" alt="LinuxTek Logo" width="200">
+      <img src="tux.png" draggable=false alt="LinuxTek Logo" width="200">
       <h1>Hardware, tools & services...</h1>
       <p>
-        Whether you're new to Linux or an advanced power user, LinuxTek is being built for you. Stay tuned.
+        Whether you're new to Linux or an advanced power user, LinuxTek is being built for you.
       </p>
     </div>
-  </header>
+
+    <form class="signup-form" id="signupForm">
+      <h2>Newsletter</h2>
+      <p class="signup-subtext">Join our newsletter to track our progress and get Linux tips, news, and discounts.</p>
+
+      <div class="input-group">
+        <input type="email" id="emailInput" placeholder="you@domain.com" required>
+        <button type="submit">Notify Me</button>
+      </div>
+
+      <p id="signupMessage" class="signup-message"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
