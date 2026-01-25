@@ -2,7 +2,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   const email = document.getElementById("emailInput").value;
-  const hiddenFieldValue = document.getElementById('hiddenField').value;
+  const hiddenFieldValue = document.getElementById('botEmail').value;
   const message = document.getElementById("signupMessage");
 
   if (hiddenFieldValue) {

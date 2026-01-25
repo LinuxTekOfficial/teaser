@@ -145,6 +145,21 @@ body {
   box-shadow: none;
 }
 
+@media (max-width: 565px) {
+  .input-group {
+    flex-direction: column;
+  }
+}
+
+#botEmail {
+  position: absolute;
+  pointer-events: none;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .signup-smalltext {
   color: gray;
 }
@@ -156,15 +171,13 @@ body {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   background: #1f2937;
   color: #e5e7eb;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem 0.25rem 2rem;
   text-align: center;
   border-top: 1px solid #334155;
-}
-
-.social-media {
-  margin-bottom: 2rem;
 }
 
 .social-icon {
@@ -193,6 +206,12 @@ footer {
 
 .footer-link:hover {
   color: #38bdf8;
+}
+
+.copyright {
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  color: gray;
 }
 
 @media (max-width: 768px) {
