@@ -94,7 +94,8 @@ body {
 
 .input-group {
   display: flex;
-  align-items: center;
+  width: 75%;
+  margin: auto auto 10px auto;
   background: #0f172a;
   border-radius: 10px;
   padding: 0.4rem;
@@ -136,8 +137,7 @@ body {
 }
 
 .input-group button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.35);
+  background: linear-gradient(135deg, #31ace0, #0c92cf);
 }
 
 .input-group button:active {
@@ -145,8 +145,77 @@ body {
   box-shadow: none;
 }
 
+.signup-smalltext {
+  color: gray;
+}
+
 .signup-message {
   margin-top: 0.8rem;
   font-size: 0.9rem;
   color: #38bdf8;
+}
+
+footer {
+  background: #1f2937;
+  color: #e5e7eb;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-top: 1px solid #334155;
+}
+
+.social-media {
+  margin-bottom: 2rem;
+}
+
+.social-icon {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  color: #f1f5f9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #38bdf8;
+}
+
+.footer-links {
+  margin-top: 2rem;
+}
+
+.footer-link {
+  color: #cbd5f5;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #38bdf8;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-link {
+    margin: 0.5rem 0;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icon {
+    margin: 0 0.5rem;
+  }
+}
+
+.content-wrapper {
+  padding: 2rem 4rem;
 }
